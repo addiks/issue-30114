@@ -4,7 +4,7 @@ require __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Form\Extension\Core\DataTransformer\MoneyToLocalizedStringTransformer;
 
-$transformer = new MoneyToLocalizedStringTransformer();
+$transformer = new MoneyToLocalizedStringTransformer(null, null, null, 2);
 
 setlocale(LC_ALL, "en_US.UTF-8");
 $value = 12 / 34;
